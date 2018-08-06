@@ -290,6 +290,25 @@ main {
     border: none;
 }
 
+#meganPic {
+  height: 165px;
+  width: 118px;
+  float: right;
+}
+
+#timmendequasPic {
+  height: 165px;
+  width: 108px;
+  float: right;
+}
+.page-title {
+  color: #004691;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 0 18px;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 769px){
   .kls-logo {
     width: 180px;
