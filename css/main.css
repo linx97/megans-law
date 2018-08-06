@@ -289,7 +289,9 @@ main {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
 }
-
+.col-sm-8 {
+    padding-right: 30px;
+}
 #meganPic {
   height: 165px;
   width: 118px;
@@ -305,7 +307,7 @@ main {
   color: #004691;
   font-size: 24px;
   line-height: 26px;
-  margin: 0 0 18px;
+  margin: 20px 0 18px;
   font-weight: 700;
 }
 
@@ -329,6 +331,12 @@ main {
   }
   .search-box h2 {
     margin-top: 5px;
+  }
+  .col-sm-8 {
+       padding-right: 15px; 
+  }
+  .modal-content {
+    padding: 48px 40px 21px;
   }
 }
 
