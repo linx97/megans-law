@@ -2,6 +2,9 @@ body {
 	font-size: 16px;
     color: #151515;
 }
+a {
+    color: #546fab;
+}
 .navbar-brand {
     height: 246px;
     position: absolute;
@@ -17,9 +20,6 @@ body {
     border: none;
     border-radius: 0;
     z-index: 10;
-}
-.nav {
-	margin-right: 48px;
 }
 .navbar-nav>li {
     height: 60px;
@@ -42,6 +42,9 @@ body {
 }
 .navbar-nav>li:hover {
     background-color: #cecece;
+}
+.navbar-default {
+  box-shadow: none;
 }
 .navbar-default .navbar-nav>li>a {
     color: #fff;
@@ -171,6 +174,9 @@ main {
     font-size: 36px;
     font-weight: bold;
 }
+.family-photo {
+  max-width: 100%;
+}
 .text-center {
     text-align: center;
 }
@@ -270,10 +276,64 @@ main {
 
 .copyright {
     text-align: center;
+    color: #546fab;
+    font-size: 12px;
 }
 .footer hr {
     border: 0 none;
     height: 1px;
-    background-color: #fff;
-    max-width: 266px;
+    background-color: #546fab;
+    max-width: 200px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+@media screen and (max-width: 769px){
+  .kls-logo {
+    width: 180px;
+  }
+  .navbar-brand {
+    height: 224px;
+    left: -8px;
+  }
+  .nav-top {
+    height: 156px;
+  }
+  .modal-dialog {
+    max-width: 80%;
+  }
+  main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .search-box h2 {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .modal-title {
+    font-size: 36px;
+  }
+  .modal-content {
+    padding: 32px 20px 21px;
+  }
+  .modal-dialog {
+    max-width: 88%;
+    margin-top: 100px;
+  }
+  .modal-landing-content p {
+    margin-bottom: 20px;
+  }
+  .navbar-brand {
+    height: 194px;
+  }
+  .nav-top {
+    height: 138px;
+  }
+  .main-page h1 {
+    font-size: 30px;
+  }
 }

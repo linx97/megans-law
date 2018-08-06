@@ -17,7 +17,7 @@
 			</div>
 		</div>
 		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
+		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -45,7 +45,7 @@
 					<div class="col-sm-8 col-xs-12 main-page">
 						<h1>Keeping Children Safe from Sexual Offenders</h1>
 						<div class="text-center">
-							<img src="img/family.jpg" alt="">
+							<img src="img/family.jpg" alt="" class="family-photo">
 						</div>
 						<h3>Megans Law</h3>
 						<p>Megan's Law is named after seven-year-old Megan Kanka, a New Jersey girl who was raped and killed by a known registered sex offender who had moved across the street from the family without their knowledge. In the wake of the tragedy, the Kankas sought to have local communities warned about sex offenders in the area. All states now have a form of Megan's Law.</p>
@@ -61,7 +61,7 @@
 					<div class="col-sm-4 col-xs-12">
 						<div class="search-box">
 							<div class="text-center">
-								<img src="img/kidslivesafe.png" alt="">
+								<img src="img/kidslivesafe.png" class="kls-logo" alt="">
 								<div class="search">
 									<h2>Is a Registered Sex Offender Living Near Your Family?</h2>
 									<hr>
@@ -110,33 +110,36 @@
 	    </div>
 
 		<footer class="footer bg-main text-sm-2">
-			<div class="container">
-				<div class="footer-top">
-					<div class="row">
-						<div class="col-xs-7">
-						</div>
-						<div class="col-xs-5">
-							<div class="header-logos footer-logos text-right">
+			<div class="row">
+				<div class="container">
+					<div class="footer-top">
+						<div class="row">
+							<div class="col-xs-7">
+							</div>
+							<div class="col-xs-5">
+								<div class="header-logos footer-logos text-right">
 
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<ul class="footer-nav list-unstyled">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Megan's Story</a></li>
-			        <li><a href="#">Safety Tips</a></li>
-			        <li><a href="#">About</a></li>
-				</ul>
-				<div class="copyright">
-					<hr>
-					© 1999-2018 MegansLaw.com 
-					All rights reserved.
-				</div>
+					<ul class="footer-nav list-unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Megan's Story</a></li>
+				        <li><a href="#">Safety Tips</a></li>
+				        <li><a href="#">About</a></li>
+					</ul>
+					<div class="copyright">
+						<hr>
+						© 1999-2018 MegansLaw.com 
+						All rights reserved.
+					</div>
+				</div>				
 			</div>
 		</footer>
 
 		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<script>
 			$('#continue').click(function(){
 				$('.modal').fadeOut(400, function() {
