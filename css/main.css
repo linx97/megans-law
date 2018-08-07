@@ -9,6 +9,7 @@ a {
     height: 246px;
     position: absolute;
     z-index: 1000;
+    padding: 10px 15px;
 }
 .nav-top {
 	height: 186px;
@@ -176,6 +177,7 @@ main {
 }
 .family-photo {
   max-width: 100%;
+  margin-bottom: 20px;
 }
 .text-center {
     text-align: center;
@@ -270,20 +272,22 @@ main {
 .footer {
     background-color: #24355d;
     padding: 30px;
-    color: #25365f;
-    background-color: #e7e7e7;
+    color: #6986c5;
 }
-
+.footer a{
+  color: #6986c5;
+}
 .copyright {
-    text-align: center;
-    color: #546fab;
+    color: #6986c5;
     font-size: 12px;
 }
 .footer hr {
     border: 0 none;
     height: 1px;
-    background-color: #546fab;
+    background-color: #6986c5;
     max-width: 200px;
+    margin-bottom: 10px;
+    margin-left: 0;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -311,13 +315,22 @@ main {
   font-weight: 700;
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 1200px){
+  .kls-logo {
+    width: 240px;
+  }
+}
+
+@media screen and (max-width: 990px){
   .kls-logo {
     width: 180px;
   }
+}
+
+@media screen and (max-width: 769px){
   .navbar-brand {
-    height: 224px;
-    left: -8px;
+    height: 200px;
+    padding: 10px 15px 10px 0;
   }
   .nav-top {
     height: 156px;
@@ -326,8 +339,8 @@ main {
     max-width: 80%;
   }
   main {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   .search-box h2 {
     margin-top: 5px;
@@ -341,6 +354,9 @@ main {
 }
 
 @media screen and (max-width: 500px){
+  body {
+    font-size: 12px;
+  }
   .modal-title {
     font-size: 36px;
   }
@@ -355,12 +371,31 @@ main {
     margin-bottom: 20px;
   }
   .navbar-brand {
-    height: 194px;
+    height: 144px;
+    padding: 10px 15px;
   }
   .nav-top {
-    height: 138px;
+    height: 105px;
   }
   .main-page h1 {
     font-size: 30px;
+  }
+  .footer a {
+    font-size: 12px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 330px){
+  .modal-dialog {
+      margin-top: 40px;
+  }
+  .btn-modal {
+    min-width: 235px;
   }
 }
