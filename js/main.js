@@ -8,6 +8,7 @@ $(document).ready(function(){
 	$('.terms').click(function(){
 		$('#modal-2').fadeIn(400, function() {
             $(this).removeClass("hidden");
+            $(this).addClass("in");
             $('body').addClass("modal-open");
         })
 	})
@@ -25,7 +26,6 @@ $(document).ready(function(){
 	        scrollTop: $('.search-box').offset().top
 	    }, 800);
 	});	
-
 
     var frmvalidator = new Validator("search");
     frmvalidator.addValidation("zip", "req", "Please enter your 5 digit postal code.");

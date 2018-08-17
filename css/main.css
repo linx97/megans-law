@@ -234,6 +234,8 @@ main {
   position: absolute;
   right: 20px;
   top: 20px;
+  cursor: pointer;
+  font-weight: bold;
 }
 .search-box .search p {
     margin-top: 10px;
@@ -340,6 +342,14 @@ main {
 .go-to-search:hover, .go-to-search:focus {
   text-decoration: underline;
   color: #fff;
+}
+
+.modal-terms-content {
+  font-weight: 400;
+}
+
+p.bold {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1200px){
