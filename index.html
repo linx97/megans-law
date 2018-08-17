@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/main.css">
+		<script src="js/gen_validatorv2.js" type="text/javascript"></script>
 	</head>
 	<body class="modal-open">
 		<div class="nav-top">
@@ -48,12 +49,16 @@
 						</div>
 						<h3>Megans Law</h3>
 						<p>Megan's Law is named after seven-year-old Megan Kanka, a New Jersey girl who was raped and killed by a known registered sex offender who had moved across the street from the family without their knowledge. In the wake of the tragedy, the Kankas sought to have local communities warned about sex offenders in the area. All states now have a form of Megan's Law.</p>
+						<a class="btn go-to-search mobile-only">Find Out if an Offender Lives Nearby</a>
 						<h3>Legislative Background</h3>
 						<p>The U.S. Congress has passed several laws that require states to implement sex offender and crimes against children registries: the Jacob Wetterling Crimes Against Children and Sexually Violent Offender Registration Act, the Pam Lychner Sexual Offender Tracking and Identification Act, and Megan's Law. On March 5, 2003, the United States Supreme Court ruled that information about potential predators may be publicly posted on the Internet.</p>
+						<a class="btn go-to-search mobile-only">Find Out if an Offender Lives Nearby</a>
 						<h3>The Problem</h3>
 						<p>While the contents of state sex offender registries are public records and you have the right to see them, access is often difficult. Often, you must know the name of the individual for which you are looking and, in many states, you must go to your local police station and complete an information request form. In some states, there are fees and search limits. Many states now maintain web sites, but these often have limited functionality.</p>
+						<a class="btn go-to-search mobile-only">Find Out if an Offender Lives Nearby</a>
 						<h3>The Solution</h3>
 						<p>Kids Live Safe is an innovative organization focused on protecting kids from Sexual Predators. Since 2009, Kids Live Safe has provided families with an extremely powerful suite of top-rated, web-based child protection tools to help you and your family be aware, be alert, and be safe. Kids Live Safe is not a government entity.</p>
+						<a class="btn go-to-search mobile-only">Find Out if an Offender Lives Nearby</a>
 						<h3>Disclaimer</h3>
 						<p>MegansLaw.com is not associated in any way with the government-run Megan's Law website. The goal behind MegansLaw.com is to complement the official site and to provide families with additional resources to help protect them from sexual predators, offenders, and pediphiles.</p>
 					</div>
@@ -66,8 +71,10 @@
 									<hr>
 									<h3>Enter your zip code to identify nearby offenders.</h3>
 									<br>
-									<input type="text" placeholder="Enter Zip Code">
-									<button class="btn-submit">Search Now</button>
+									<form action="" id="search">
+										<input type="text" placeholder="Enter Zip Code" id="zip">
+										<button type="submit" class="btn-submit" value="Search Now">Search Now</button>									
+									</form>
 									<p>By clicking above, I accept the <span class="terms">Terms of Use</span></p>
 								</div>
 								
@@ -134,15 +141,168 @@
 				</div>				
 			</div>
 		</footer>
+	    <div class="modal fade search-modal hidden" id="modal-2">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-landing-content">
+	                    <div class="close-x close-2">X</div>
+	                    <h3 class="grey text-sm fw400">
+	                        Terms of Use
+	                    </h3>
+	                    <p class="bold">YOUR RIGHTS, OBLIGATIONS AND PRIVILEGES:</p>
+							<p>The following is the Membership Agreement (“Agreement”) between the provider of this membership program (“Kids Live Safe” and “KidsLIveSafe.com” and "We" and “Our” and "Us") and the enrolled member of this membership program ("You" and Your”). UPON ENROLLMENT, YOU AGREE TO THESE TERMS AND CONDITIONS. WE URGE YOU TO READ THIS MEMBERSHIP AGREEMENT CAREFULLY AND, IF YOU HAVE ANY QUESTIONS, CALL OUR MEMBER SERVICE REPRESENTATIVES AT THE NUMBER IN YOUR MEMBERSHIP MATERIALS OR ON THE PROGRAM WEBSITE.</p>
+							 
+							<p class="bold">MEMBERSHIP BENEFITS: </p> 
+							<p>As a Member, You are entitled to access discounts and/or other benefits on certain products and services offered by participating vendors ("Benefits"), as explained in the membership materials or on the membership program website ("Program Website" and “Site”).  Some Benefits may not be available in Your area.  Please see Your membership materials and Program Website for details and limitations.  We reserve the right to suspend or end the program or certain aspects thereof, without prior notice, in our sole discretion.  We also reserve the right to suspend or end certain aspects of the program in certain geographic areas, without prior notice, in our sole discretion.</p>
+							 
+							<p class="bold">USE OF MEMBERSHIP:</p>
+							<p>Your membership is non-transferable. You agree that only You and Your Immediate Family may use the membership. "Immediate Family" means You, Your spouse or partner and Your children (age 13 and older) living in Your home. Benefits are not for resale. You will promptly notify Us if You become aware of any unauthorized use of Your membership (where applicable). If You were offered the opportunity to claim a gift in connection with Your enrollment in the program, You are limited to one gift per program and, depending upon the offer You agreed to, You may be required to still be a member of the program at the time Your gift claim is processed.</p>
+							 
+							<p class="bold">MEMBERSHIP TERM:</p>
+							<p>Your membership is effective for: (a) under the annual payment plan, a period of twelve (12) months following the membership enrollment date and will continue on an annual basis until You cancel Your membership as described below (b) under the monthly payment plan, a period of one (1) month following the membership enrollment date and will continue on a month-to-month basis until You cancel Your membership as described below, or (c) under the installment payment plan, the period agreed upon by You. You are limited to one membership per twelve-month period per Immediate Family as defined below. </p>
+
+							<p>We reserve the right to terminate your account with or without cause at any time and for any reason. You agree that any termination of your access to the Benefits may be effected without prior notice. Once your account has been terminated for any reason, you will have no further right or access to use the Service, and you immediately shall cease using and destroy all copies of any Software.</p>
+
+							 
+							<p class="bold">FEE-BASED SERVICE CHARGES:</p>
+							<p>Certain features of this Site are available only through the purchase of a Site subscription ("Fee-Based Services").<br>
+							(a)You agree to pay, using a valid credit card or debit card, the trial fee, monthly, quarterly, semi-annual or annual subscription charges set forth on the Site and other charges incurred on Your account in order to access the Fee-Based Services.<br>
+							(b)After the trial period, and every month, quarter, half-year or year thereafter until You cancel, the membership fee will be automatically billed to Your credit card (or debited from Your checking account, if You authorized that option). The renewal charge will be the then current published rate for the term of Your subscription. In the event We cannot charge Your account, we reserve the right to continue trying to bill Your account or to terminate Your access to the Fee-Based Services.<br>
+							(c)You may be subject to a pre-authorization at the time You order Your Online Membership. THE PRE-AUTHORIZATION IS NOT A CHARGE TO YOUR CREDIT CARD, HOWEVER THE THEN APPLICABLE SUBSCRIPTION CHARGE MAY BE RESERVED AGAINST YOUR AVAILABLE CREDIT CARD LIMIT. FOR FURTHER DETAILS, CONTACT YOUR CREDIT CARD ISSUER FOR FURTHER DETAILS.</p>
+							 
+							<p class="bold">CANCELLATION POLICY:</p>
+							<p>You understand that to cancel Your subscription you must either email us at support@kidslivesafe.com or call our member support department by calling 1-800-301-5905. Once you have confirmed your desire to cancel, Your account is immediately canceled and You will receive a cancellation confirmation email. If You do not receive a cancellation confirmation email, Your account was not canceled. </p>
+
+							<p>We process requests for a Kids Live Safe membership promptly, and immediately incur costs for account setup. Therefore, we have a NO REFUND policy for Kids Live Safe.</p>
+							 
+							<p class="bold">PRICING INFORMATION:</p>
+							<p>We offer several membership types including Trial Memberships, a Standard Membership and an Annual Membership. As we sometimes offer promotional discounts the price of your membership may vary depending on the date you signed up. Each membership type and the respective cancellation policies are explained below: </p>
+
+							<p>7-Day Trial Membership (Monthly Subscription): You will have full access to the service for 7-days for a nominal trial fee. If You do not cancel the service during the trial period, You will be billed $29.97 exactly 7-days from the date and time You originally registered. For example, if You signed up for the trial on January 1 at 2PM, You would be billed for the first month of service on January 8 at 2PM. YOUR ACCOUNT WILL CONTINUE TO BE BILLED ON A MONTHLY BASIS UNTIL CANCELLED.</p>
+							 
+							<p>7-Day Trial Membership (Quarterly Subscription): You will have full access to the service for 7-days for a nominal trial fee. If You do not cancel the service during the trial period, You will be billed $39.97 exactly 7-days from the date and time You originally registered. For example, if You signed up for the trial on January 1 at 2PM, You would be billed for the first quarterly of service on January 8 at 2PM. YOUR ACCOUNT WILL CONTINUE TO BE BILLED ON A MONTHLY BASIS UNTIL CANCELLED.</p>
+							 
+							<p>7-Day Trial Membership (Semi-Annual Subscription): You will have full access to the service for 7-days for a nominal trial fee. If You do not cancel the service during the trial period, You will be billed $49.97 exactly 7-days from the date and time You originally registered. For example, if You signed up for the trial on January 1 at 2PM, You would be billed for the first half-year of service on January 8 at 2PM. YOUR ACCOUNT WILL CONTINUE TO BE BILLED ON A MONTHLY BASIS UNTIL CANCELLED.</p>
+
+							<p>7-Day Trial Membership (Annual Subscription): You will have full access to the service for 7-days for a nominal trial fee. If You do not cancel the service during the trial period, You will be billed $59.98 exactly 7-days, from the date and time You originally registered. For example, if You signed up for the trial on January 1 at 2PM, You would be billed for the first year of service on January 8 at 2PM. YOUR ACCOUNT WILL CONTINUE TO BE BILLED ON AN ANNUAL BASIS UNTIL CANCELLED</p>
+							 
+							<p>Standard Membership (Monthly): You will be billed $29.97, immediately upon registration. There is NO trial with the Standard Membership. YOUR ACCOUNT WILL CONTINUE TO BE BILLED ON A MONTHLY BASIS UNTIL CANCELLED. </p>
+							 
+							<p>Standard Membership (quarterly): You will be billed $39.97, immediately upon registration. There is NO trial with the Standard Membership. YOUR ACCOUNT WILL CONTINUE TO BE BILLED ON A MONTHLY BASIS UNTIL CANCELLED.</p>
+							 
+							<p>Standard Membership (Semi-Annual): You will be billed $49.97, immediately upon registration. There is NO trial with the Standard Membership. YOUR ACCOUNT WILL CONTINUE TO BE BILLED ON A MONTHLY BASIS UNTIL CANCELLED.</p>
+
+							<p>Standard Membership (Annual): You will be billed $59.98, immediately upon registration. There is NO trial with the Standard Membership. YOUR ACCOUNT WILL CONTINUE TO BE BILLED ON An ANNUAL BASIS UNTIL CANCELLED. </p> 
+
+							<p>In the event that Your payment cannot be processed for insufficient available credit or funds, We may, at our discretion, divide the total membership fee into incremental charges in order to process the total membership fee. Additionally, We reserve the right to bill at a discounted rate as determine by Us.</p>
+							 
+							<p>If you pay by credit or debit card we may obtain a pre-approval from the issuer of the card for an amount up to the amount of the purchase. We will bill your card at the time of purchase or shortly thereafter. If you cancel a transaction before completion, that pre-approval may result in your funds not otherwise being immediately available. If you pay by debit card and your payment results in an overdraft or other fee from your bank, you alone are responsible for that fee.</p>
+
+							<p>From time to time, in our sole discretion, We may provide a reduced membership fee, for a promotional period, to first-time or other selected customers. If You are provided with such a promotional reduction in Your membership fee ("Promotional Membership Fee"), Your payment source will be charged the Promotional Membership Fee for the promotional period. You agree that any such reduced price is only valid for the promotional period established by Us, and that the regular applicable periodic membership fee will be charged to Your payment source following the end of the promotional period. Terms of the Promotional Membership Fee, including the duration and amount of the Promotional Membership Fee, may vary from time to time.</p>
+							 
+							<p>You are responsible for and agree to reimburse us for all reversals, chargebacks, claims, fees, fines, penalties and other liability incurred by us (including costs and related expenses) that were caused by or arising out of payments that you authorized or accepted. In the event you dispute or otherwise challenges Our performance hereunder and request a chargeback or otherwise dispute a charge with the issuer of your credit/debit card utilized to make payment hereunder, or the credit/debit card issuer authorized by you for Us to charge payment hereunder, you shall immediately pay by cashier’s check or money order to Us a sum equal to your balance as shown on Our books. Payment of this sum by you is a condition precedent to your ability to institute any such action in law, equity or otherwise arising out of or relating to this Agreement. </p>
+
+							<p>You have the right to receive written notice of all changes to Your membership fee that vary from the amount You previously authorized. Should You wish to receive such written notification in advance of any change to Your membership fee, please contact Us at 1-800-301-5905 or write to: Kids Live Safe c/o Renewal Price Change Notification, 3905 State Street, Suite 7-228, Santa Barbara, CA 93105. Please include Your name, address, telephone number and Customer ID.</p>
+							 
+							<p class="bold">USER EMAIL OR TESTIMONIALS:</p>
+							<p>If You are a customer and send an email to the website, or if You communicate with the site by phone or mail, the website collects information about Your communication and by communicating with the site You give Your permission to collect, archive, retrieve, and otherwise use any information collected as the site sees fit. Any communication which, in its sole discretion, the site deems to be a testimonial, may be publicized for commercial purposes.</p>
+							 
+							<p class="bold">COPYRIGHT AND TRADEMARKS:
+							<p>All materials on the Site, including without limitation text, images, software, databases, and Fee-Based Services (collectively, the "Content") are owned or controlled by KidsLiveSafe.com, its content suppliers and/or other content providers and is protected by the copyright and trademark laws of the United States and other countries, international conventions, and other applicable laws. </p>
+
+							<p>You may not download, display, reproduce, create derivative works from, transmit, sell, distribute, or in any way exploit the Site or any portion thereof for any public or commercial use without the prior written permission of KidsLiveSafe.com. </p>
+
+							<p>You agree not to use any trademarks, service marks, names, logos, or other identifiers of KidsLiveSafe.com, licensors, independent contractors, providers and affiliates (collectively, "Affiliates") without the prior written permission of KidsLiveSafe.com or the relevant Affiliate.</p>
+							 
+							<p class="bold">INFORMATION PROVIDED:</p>
+							<p>You acknowledge that any reliance upon any advice, opinion, statement, or other information displayed or distributed through the Site is at Your sole risk. We reserve the right, in our sole discretion and without notice, to correct any errors or omissions in any portion of the Site, or to deny access to the Site to anyone at any time. Prior to purchasing any third party products or services described on the Site, You are advised to verify pricing and other information. Neither KidsLiveSafe.com nor its Affiliates shall have any liability arising from Your purchases of third party goods or services based upon the information provided on the Site.</p>
+							 
+							<p class="bold">PRIVACY POLICY:</p>
+							<p>In connection with your enrollment and registration for the Benefits, or use of the Benefits, you will be submitting your personal information to us, or allowing us to access your personal information, including account passwords, user names, financial account information and other personal information, as well as other data, materials and content you submit ("Your Information"). BY SUBMITTING YOUR ORDER, ACCESSING OR USING THE SERVICE, OR DOWNLOADING ANY SOFTWARE PROVIDED AS PART OF THE SERVICE, YOU ARE ACKNOWLEDGING THAT YOU HAVE READ OUR PRIVACY POLICY AND AGREE TO BE BOUND BY IT. Subject to our Privacy Policy, you agree that we may use, copy, modify, display and distribute Your Information as we see fit to provide the Benefits. You represent that you have the right to give us Your Information and authorize its use as described above.</p>
+							 
+							<p class="bold">LINKS TO OTHER SITES:</p>
+							<p>The Site may contain links to other sites on the Internet, which may be maintained by third parties. Such links do not constitute an endorsement by KidsLiveSafe.com or its Affiliates of any third-party site or any materials contained therein. KidsLiveSafe.com and its Affiliates do not control, and are not responsible for, the availability, accuracy, privacy policy, or currency of such third-party sites or any information, content, products or services accessible from such third-party sites.</p>
+							 
+							<p class="bold">AGE RESTRICTIONS:</p>
+							<p>You represent and warrant to Us that You are at least eighteen (18) years old and that You possess the legal right and ability to enter into this Agreement and to use the Site in accordance with this Agreement.</p>
+							 
+							<p class="bold">FINANCIAL RESPONSIBILITY:</p>
+							<p>You agree not to assign, transfer or sublicense Your rights as a subscriber to the Fee-Based Services. You agree to be financially responsible for all usage or activity on Your Fee-Based Services account.</p>
+							 
+							<p class="bold">THIRD-PARTY PRODUCTS AND WEBSITES:</p>
+							We may offer or provide you access to products, services or websites provided by third parties, including but not limited to promotional or incentive offers, or free services provided by third parties, including the Net Nanny® Internet Filtering Software and websites that hyperlink to our website. Kids Live Safe does not control or bear any responsibility for those websites or third parties, including but not limited to their products or services or use by them of personal information you may provide them.</p>
+							 
+							<p class="bold">INDEMNIFICATION:</p>
+							<p>You hereby agree to indemnify, defend and hold harmless KidsLiveSafe.com and its Affiliates from and against any and all liability and costs incurred by KidsLiveSafe.com or the Affiliates in connection with any claim arising out of any breach or alleged breach of any of Your obligations set forth herein. You shall cooperate as fully as reasonably required in the defense of any claim. We reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by You and You shall not in any event settle any matter without the written consent of KidsLiveSafe.com.</p>
+							 
+							<p class="bold">DISCLAIMER OF WARRANTY:</p>
+							<p>EXCEPT AS EXPRESSLY SET FORTH HEREIN, THE SITE (INCLUDING ALL CONTENT, SOFTWARE, FUNCTIONS, FEE-BASED SERVICES, MATERIALS AND INFORMATION MADE AVAILABLE THEREON OR ACCESSED BY MEANS THEREOF) ARE PROVIDED AS IS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE OR IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, COMPATIBILITY, SECURITY, ACCURACY, OR NON-INFRINGEMENT. TO THE FULLEST EXTENT PERMISSIBLE BY LAW, KIDSLIVESAFE.COM AND THE AFFILIATES MAKE NO WARRANTIES AND SHALL NOT BE LIABLE FOR THE USE OF THE SITE UNDER ANY CIRCUMSTANCES, INCLUDING BUT NOT LIMITED TO NEGLIGENCE BY KIDSLIVESAFE.COM. KIDSLIVESAFE.COM DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SITE OR THE FEE-BASED SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, THAT THE SITE OR FEE-BASED SERVICES WILL MEET ANY PARTICULAR CRITERIA OF PERFORMANCE OR QUALITY, OR THAT THE SITE, INCLUDING FORUMS OR THE SERVER(S) ON WHICH THE SITE IS OPERATED, ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</p>
+							 
+							<p class="bold">LIMITATION OF LIABILITY:</p>
+							<p>USE OF THE SITE IS AT YOUR OWN RISK. YOU ASSUME FULL RESPONSIBILITY AND RISK OF LOSS RESULTING FROM YOUR DOWNLOADING AND/OR USE OF FILES, INFORMATION, COMMUNICATIONS, CONTENT, OR OTHER MATERIAL (INCLUDING WITHOUT LIMITATION SOFTWARE) ACCESSED THROUGH OR OBTAINED BY MEANS OF THE SITE. UNDER NO CIRCUMSTANCES SHALL KIDSLIVESAFE.COM OR THE AFFILIATES, OR ANY PROVIDER OF TELECOMMUNICATIONS OR NETWORK SERVICES FOR KIDSLIVESAFE.COM OR THE AFFILIATES, BE LIABLE FOR ANY INDIRECT, PUNITIVE, SPECIAL, OR CONSEQUENTIAL DAMAGES THAT ARE DIRECTLY OR INDIRECTLY RELATED TO THE USE OF, OR THE INABILITY TO USE, THE SITE OR FEE-BASED SERVICES, EVEN IF KIDSLIVESAFE.COM, THE AFFILIATES, OR THEIR PROVIDERS OF TELECOMMUNICATIONS OR NETWORK SERVICES HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE TOTAL LIABILITY OF KIDSLIVESAFE.COM AND THE AFFILIATES HEREUNDER IS LIMITED TO THE AMOUNT, IF ANY, ACTUALLY PAID BY YOU FOR ACCESS AND USE OF THE FEE-BASED SERVICES. YOU HEREBY RELEASE KIDSLIVESAFE.COM AND THE AFFILIATES FROM ANY AND ALL OBLIGATIONS, LIABILITIES AND CLAIMS IN EXCESS OF THIS LIMITATION. SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.</p>
+							 
+							<p class="bold">MODIFICATIONS:</p>
+							<p>(a) To the Agreement:<br>
+							KidsLiveSafe.com has the right to modify this Agreement and any policies affecting the Site. Any modification is effective immediately upon posting to the Site or distribution via electronic mail or conventional mail. Your continued use of the Site following notice of any modification to this Agreement shall be conclusively deemed an acceptance of all such modification(s). Your only right with respect to any dissatisfaction with any modifications made pursuant to this provision, or any policies or practices of KidsLiveSafe.com in providing the Site, including without limitation (i) any change in the Content, or (ii) any change in the amount or type of fees associated with the Fee-Based Services, is to cancel Your subscription. </p>
+
+							<p>(b) To the Site:<br>
+							KidsLiveSafe.com has the right to modify, suspend or discontinue the Site or any portion thereof at any time, including the availability of any area of the Site, including without limitation the Fee-Based Services. KidsLiveSafe.com may also impose limits on certain features and services or restrict Your access to parts or all of the KidsLiveSafe.com Site without notice or liability.</p>
+							 
+							<p class="bold">YOUR RIGHTS:</p>
+							<p>KidsLiveSafe.com grants You a non-exclusive, non-transferable, limited right to access, use this Web site (the "Site") and the materials provided hereon, provided that You comply fully with this Agreement. The contents of the Site are only for Your personal, noncommercial use. You agree not to interrupt, or attempt to interrupt, the operation of the Site in any way.</p>
+							 
+							<p class="bold">INCLUSION:</p>
+							<p>You acknowledge that the Disclaimer is part of Our Terms of Use, and by accessing or using Our Site, You agree to be bound by all of its terms and conditions. If You do not agree to these terms, please do not access or use the Site. You acknowledge and agree that it is Your responsibility to review the Site and the Disclaimer periodically and to be aware of any modifications. Your use of the Site after such modifications will constitute your acknowledgment of the modified terms; and agreement to abide and be bound by the modified terms.</p>
+							 
+							<p class="bold">ENTIRE AGREEMENT:</p>
+							<p>This Agreement constitutes the entire agreement between You and KidsLiveSafe.com with respect to the Site and, if applicable, the Fee-Based Services and supersedes all prior agreements between You and KidsLiveSafe.com. Failure by KidsLiveSafe.com to enforce any provision of this agreement shall not be construed as a waiver of any provision or right. </p>
+
+							<p>In the event that any portion of this Agreement is held unenforceable, the unenforceable portion shall be construed in accordance with applicable law as nearly as possible to reflect the original intentions of the parties, and the remainder of the provisions shall remain in full force and effect.
+							This Agreement is between You and KidsLiveSafe.com. If You do not wish to be bound by these terms and conditions of use, You should not visit or use the KidsLiveSafe.com Web site. KidsLiveSafe.com reserves the right to change these Terms of Use from time to time at its sole discretion, without prior notice.</p>
+							 
+							<p class="bold">GOVERNING LAW:</p>
+							<p>THIS MEMBERSHIP AGREEMENT AND THE TERMS OF MEMBERSHIP SHALL BE GOVERNED AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF THE STATE OF CALIFORNIA, WITHOUT GIVING EFFECT TO THE CHOICE OF LAW PROVISIONS THEREOF.</p>
+							 
+							<p class="bold">ARBITRATION</p>
+							<p>PLEASE READ THIS PROVISION CAREFULLY. IT PROVIDES THAT ANY DISPUTE MAY BE RESOLVED BY BINDING ARBITRATION. ARBITRATION REPLACES THE RIGHT TO GO TO COURT, INCLUDING THE RIGHT TO BRING OR PARTICIPATE IN A CLASS ACTION OR SIMILAR PROCEEDING. IN ARBITRATION, A DISPUTE IS RESOLVED BY AN ARBITRATOR INSTEAD OF A JUDGE OR JURY. THE ARBITRATOR'S DECISION WILL GENERALLY BE FINAL AND BINDING. ARBITRATION PROCEDURES ARE SIMPLER AND MORE LIMITED THAN COURT PROCEDURES. </p>
+
+							<p>Any claim, dispute or controversy between You and Us (or made by or against anyone connected with You or Us, or claiming through You or Us) arising from or relating to Your membership ("Claim"), including Claims regarding applicability or validity of this arbitration provision, shall be resolved by binding arbitration in accordance with the rules of the American Arbitration Association ("AAA") (except for any AAA rules providing for class claims or class arbitration) then in effect, subject to this Agreement. </p>
+
+							<p>Any Claim regarding the validity or enforceability of this arbitration provision shall be governed by the laws of the State of California, without giving effect to the choice of law provisions thereof. This arbitration provision is made pursuant to a transaction involving interstate commerce and, in all other respects, including the determination of any questions about whether Claims are within the scope of this arbitration provision and therefore subject to arbitration shall be governed by the Federal Arbitration Act, 9 U.S.C. §1-16 ("FAA"), and shall be resolved by interpreting the arbitration provision in the broadest way the law will allow it to be construed. </p>
+
+							<p>All Claims are subject to arbitration, no matter what theory they are based on or what remedy they seek. This includes Claims based on contract, tort (including intentional tort), fraud, agency, negligence, statutory or regulatory provisions, or any other source of law. Claims made and remedies sought as part of a class action, private attorney general or other representative action are subject to arbitration on an individual (non-class, non-representative) basis. As an exception to arbitration, You and We retain the right to pursue in a small claims court located in the federal judicial district that includes Your billing address at the time of the Claim, any Claim that is within the court's jurisdiction and proceeds on an individual basis.</p>
+
+							<p>The arbitration shall be conducted before a single arbitrator, applying to the Claims the substantive laws of the state of California without giving effect to the choice of law provisions thereof. The arbitrator's authority is limited solely to the Claims between You and Us alone. The arbitration will not be consolidated with any other arbitration proceeding. You and We do not agree to any arbitration on a class action or representative basis, and the arbitrator shall not be authorized to treat any Claim on a class action or representative basis. </p>
+
+							<p>If You prevail in the arbitration of any Claim against Us, We will reimburse You for any fees You paid to the AAA in connection with the arbitration. Any decision rendered will be final and binding on the parties, and judgment may be entered in a court of competent jurisdiction. </p>
+
+							<p>Arbitration rules and forms may be obtained from the AAA at www.adr.org. Claims shall be filed in any AAA office. However, any participatory hearing that You attend shall take place in Santa Barbara County, California, unless You chose to have the hearing take place in the federal judicial district that includes Your billing address at the time the arbitration Claim is filed.</p> 
+
+							<p>This arbitration provision applies to all Claims now in existence or that may arise in the future. The arbitration provision shall survive termination of Your membership as well as voluntary payment of the debt in full by You or any bankruptcy by You. </p>
+
+							<p>IF YOU DO NOT CHOOSE TO ACCEPT THIS BINDING ARBITRATION PROVISION, YOU MUST NOTIFY US IN WRITING BY REGISTERED MAIL AT ARBITRATION OPT-OUT, 3905 STATE STREET, SUITE 7-228, SANTA BARBARA, CA 93105 WITHIN TWENTY (20) DAYS AFTER RECEIPT OF THIS "TERMS OF USE AND MEMBERSHIP AGREEMENT." IF YOU SO NOTIFY US BY THAT TIME THAT YOU DO NOT ACCEPT THE BINDING ARBITRATION PROVISION, YOU MAY CONTINUE TO BE A MEMBER FOR THE CURRENT MEMBERSHIP TERM UNLESS THE MEMBERSHIP IS OTHERWISE TERMINATED HEREUNDER. HOWEVER, IN THE EVENT YOUR MEMBERSHIP IS CONTINUED, WE SHALL HAVE THE RIGHT NOT TO RENEW YOUR MEMBERSHIP AT THE END OF THE MEMBERSHIP TERM (OR TWELFTH MONTH ANNIVERSARY DATE FOR MEMBERSHIPS UNDER THE MONTHLY PAYMENT PLAN).</p>
+							 
+							<p class="bold">AVAILABILITY RESTRICTIONS</p>
+							<p>This program is available in 51 states and territories as well as Puerto Rico, Guam, and the Virgin Islands. Orders to U.S. military post offices cannot be fulfilled.</p>
+							 
+							<p class="bold">COPYRIGHT & TRADEMARK NOTICES</p>
+							<p>You acknowledge that the KidsLiveSafe.com website contains information, software, photos, video, text, graphics, music, sounds or other material (collectively, "Content") that are protected by copyrights, patents, trademarks, trade secrets, or other proprietary rights, and that these rights are valid and protect in all forms, media and technologies existing now or hereafter developed. All Content is copyrighted under U.S. copyright laws.  The program name and logo are our service marks. All other service marks and trademarks appearing on the KidsLiveSafe.com website are the trademarks of their respective owners. You may not modify, publish, transmit, participate in the transfer or sale, create derivative works, or in any way exploit any Content in whole or in part.</p>
+							 
+							<p class="bold">CONSENT TO ELECTRONIC COMMUNICATIONS</p>
+							<p>You consent to receive communications from Us about Your membership electronically, either by e-mail or by notices posted on the KidsLiveSafe.com website, as determined by Us in our sole discretion. You agree that any requirement that a notice, disclosure, agreement, or other communication be sent to You by Us in writing is satisfied by such electronic communication. You agree that We or the provider of the program may send You e-mails which include notices about Your account as well as information pertaining to the program and services, such as featured products/services or new offerings. You agree that this information is part of Your membership with Us.</p>
+							 
+							<p>Subscribing to KidsLiveSafe.com indicates Your agreement to the terms and conditions set forth above.</p>
+							<p>© 2011. All Rights Reserved.</p>
+	                    </p>
+	                    <div class="text-center">
+	                        <a class="close-2" ="continue" class="btn btn-modal js-btn-modal">Close</a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 		<script src="js/jquery-2.2.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script>
-			$('#continue').click(function(){
-				$('.modal').fadeOut(400, function() {
-		            $(this).removeClass("in");
-		            $("body").removeClass("modal-open");
-		        })
-			})
-		</script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

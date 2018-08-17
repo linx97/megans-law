@@ -74,6 +74,7 @@ a {
 .modal-content {
   padding: 48px 60px 21px;
   font-weight: bold;
+  position: relative;
 }
 
 .modal-icon {
@@ -171,7 +172,7 @@ main {
 .main-page h1  {
     font-family: 'Oxygen', sans-serif;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 36px;
     font-weight: bold;
 }
@@ -227,11 +228,20 @@ main {
 }
 .terms {
     text-decoration: underline;
+    cursor: pointer;
+}
+.close-x {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 .search-box .search p {
     margin-top: 10px;
     font-style: italic;
     font-size: 14px;
+}
+#modal-2 .modal-dialog{
+  margin-top: 80px;
 }
 .form-control, input[type=text], input[type=password], input[type=email], input[type=tel], input[type=search], input[type=url], input[type=number], textarea, select, select.form-control {
     display: block;
@@ -314,6 +324,24 @@ main {
   font-weight: 700;
 }
 
+.go-to-search {
+    display: block;
+    border: 0;
+    font-size: 15px;
+    color: #fff;
+    background: #526da9;
+    padding: 7px;
+    margin-top: 20px;
+    border-radius: 2px;
+    width: inherit;
+    max-width: 286px;
+}
+
+.go-to-search:hover, .go-to-search:focus {
+  text-decoration: underline;
+  color: #fff;
+}
+
 @media screen and (max-width: 1200px){
   .kls-logo {
     width: 240px;
@@ -323,6 +351,11 @@ main {
 @media screen and (max-width: 990px){
   .kls-logo {
     width: 180px;
+  }
+}
+@media screen and (min-width: 768px){
+  .mobile-only {
+    display: none;
   }
 }
 
@@ -377,7 +410,8 @@ main {
     height: 105px;
   }
   .main-page h1 {
-    font-size: 30px;
+    font-size: 26px;
+    margin-bottom: 10px;
   }
   .footer a {
     font-size: 12px;
@@ -388,13 +422,17 @@ main {
   h3 {
     font-size: 20px;
   }
+  .family-photo {
+    margin-bottom: -10px;
+  }
 }
 
 @media screen and (max-width: 330px){
   .modal-dialog {
       margin-top: 40px;
   }
-  .btn-modal {
-    min-width: 235px;
+  .go-to-search {
+    font-size: 14px;
+    max-width: 260px;
   }
 }
