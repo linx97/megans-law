@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/jquery-2.2.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main4.js"></script>
+		<script src="js/main.js"></script>
 		<script src="js/gen_validatorv2.js" type="text/javascript"></script>
 	</head>
 	<body class="modal-open">
@@ -73,7 +73,9 @@
 									<hr>
 									<h3>Enter your zip code to identify nearby offenders.</h3>
 									<br>
-									<form action="https://signup.kidslivesafe.com/dt/ei.php?c=23&scn=meganslaw" id="search">
+									<form action="http://kls.secure-cart.biz" id="search">
+										<input name="c" type="hidden" value="23" />
+    									<input name="scn" type="hidden" value="meganslaw" />
 										<input type="text" placeholder="Enter Zip Code" id="zip" name="zip">
 										<button type="submit" class="btn-submit" value="Search Now">Search Now</button>									
 									</form>
