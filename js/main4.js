@@ -32,4 +32,19 @@ $(document).ready(function(){
     frmvalidator.addValidation("zip", "numeric", "Please enter a 5 digit zip code.");
     frmvalidator.addValidation("zip", "maxlen=5");
     frmvalidator.addValidation("zip", "minlen=5");
+	
+	// STICKY SEARCHBAR
+	if($('.search-btm').length > 0){
+		var stop = $('#main-page').offset().top + $('#main-page').height();
+		var search = $('.search-btm')
+		function yScroll(){
+	        var yPos = window.pageYOffset;
+	        if(yPos > stop) {
+	            search.removeClass('stuck');
+	        } else if (yPos < stop) {
+	        	search.addClass('stuck');
+	        }
+	    };
+	    window.addEventListener("scroll", yScroll);		
+	}
 })

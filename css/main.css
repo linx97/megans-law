@@ -1,6 +1,7 @@
 body {
 	font-size: 16px;
   color: #151515;
+  position: relative;
 }
 a {
     color: #546fab;
@@ -329,14 +330,13 @@ main {
 .go-to-search {
     display: block;
     border: 0;
-    font-size: 15px;
+    font-size: 16px;
     color: #fff;
     background: #526da9;
-    padding: 7px;
-    margin-top: 20px;
+    padding: 10px;
     border-radius: 2px;
     width: inherit;
-    max-width: 286px;
+    margin: auto;
 }
 
 .go-to-search:hover, .go-to-search:focus {
@@ -350,6 +350,22 @@ main {
 
 p.bold {
   font-weight: 700;
+}
+
+.search-btm {
+  padding: 10px;
+  text-align: center;
+  background: #526da9;
+  -webkit-box-shadow: 0px -1px 33px 0px rgba(89,89,89,0.4);
+  -moz-box-shadow: 0px -1px 33px 0px rgba(89,89,89,0.4);
+  box-shadow: 0px -1px 33px 0px rgba(89,89,89,0.4);
+}
+
+.search-btm.stuck {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 1200px){
@@ -392,6 +408,25 @@ p.bold {
   }
   .modal-content {
     padding: 48px 40px 21px;
+  }
+}
+
+@media screen and (max-width: 767px){
+    .navbar-nav>li {
+    height: 40px;
+    display: inline-block;
+    float: left;
+  }
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a {
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar-nav {
+    margin: 22.5px -15px 0;
   }
 }
 
@@ -444,5 +479,13 @@ p.bold {
   .go-to-search {
     font-size: 14px;
     max-width: 260px;
+  }
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li>a {
+      font-size: 14px;
+      padding-left: 8px;
+      padding-right: 8px;
+  }
+  .btn-modal {
+    min-width: 230px;
   }
 }
