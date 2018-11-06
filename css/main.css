@@ -331,12 +331,14 @@ main {
     display: block;
     border: 0;
     font-size: 16px;
+    background: #f95f2e;
     color: #fff;
-    background: #526da9;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 22px;
     width: inherit;
     margin: auto;
+    font-weight: bold;
+
 }
 
 .go-to-search:hover, .go-to-search:focus {
@@ -353,12 +355,8 @@ p.bold {
 }
 
 .search-btm {
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
-  background: #526da9;
-  -webkit-box-shadow: 0px -1px 33px 0px rgba(89,89,89,0.4);
-  -moz-box-shadow: 0px -1px 33px 0px rgba(89,89,89,0.4);
-  box-shadow: 0px -1px 33px 0px rgba(89,89,89,0.4);
 }
 
 .search-btm.stuck {
@@ -367,7 +365,10 @@ p.bold {
   left: 0;
   right: 0;
 }
-
+.search-arrow {
+  margin-left: 10px;
+  margin-top: -4px;
+}
 @media screen and (max-width: 1200px){
   .kls-logo {
     width: 240px;
