@@ -429,6 +429,9 @@ p.bold {
   .navbar-nav {
     margin: 22.5px -15px 0;
   }
+  .display-4 {
+    font-size: 19px;
+  }
 }
 
 @media screen and (max-width: 500px){

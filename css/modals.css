@@ -1,0 +1,178 @@
+.iframe-modal {
+    width: 100%;
+    border: none;
+    height: 320px;
+}
+
+.modal-footer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    background-color: rgba(24, 26, 28, 0.6);
+    overflow: auto;
+    border-top: none;
+    text-align: left;
+}
+
+.modal-footer p {
+  margin-bottom: 28px;
+}
+
+.modal-footer-box {
+    /*width: 895px;*/
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 140px;
+    margin: 30px auto;
+}
+
+.modal-footer-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    position: relative;
+    outline: 0;
+}
+
+.modal-footer-close-btn {
+    display: none;
+}
+
+.modal-footer-box .modal-footer-content {
+    padding: 40px 30px 20px;
+    border: 10px solid #333;
+    background: #fff;
+    border-radius: 30px;
+    font-size: 21px;
+    line-height: 24px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.modal-footer-container {
+    padding: 40px 53px 28px 59px;
+    padding-right: 73px;
+    padding-left: 73px;
+}
+
+.modal-footer-link-btn {
+    min-width: 222px;
+    padding: 7px 25px 8px 25px;
+    font-size: 1.25rem;
+    padding: 9px 20px;
+    border-width: 2px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.625rem;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+}
+
+.modal-footer-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -17px;
+    margin-left: -17px;
+}
+
+.FCRA {
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    line-height: 17px;
+    font-size: 12px;
+}
+
+.modal-footer-step {
+    margin-bottom: 20px; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+iframe {
+    border: none;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #1e5793;
+    border-color: #1e5793;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 769px) {
+	.modal-footer-close-btn {
+	    display: block;
+	    position: fixed;
+	    top: 76px;
+	    right: 82px;
+	    font-size: 22px;
+	    font-weight: bold;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.modal-footer-box .modal-footer-content {
+	    padding: 50px 10px 10px;
+        line-height: 20px;
+        font-size: 0.9rem;
+	}
+	.modal-footer-close-btn {
+	    top: 66px;
+	    right: 55px;
+	    font-size: 18px;
+	}
+	.modal-footer-container {
+        padding: 20px 0px 10px 0px;
+    }
+	.modal-footer-step {
+	    margin-bottom: 25px;
+	}
+    .modal-footer-link-btn {
+        margin-top: 15px;
+    }
+    h1, h2, h3, h4, h5, h6, .btn, input, p, a {
+        font-family: sans-serif;
+    }
+    h2 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+	.modal-footer-box {
+	    max-width: 100%;
+	}
+	.modal-footer-container {
+	    padding: 20px 0px;
+	}
+	.modal-footer-link-btn {
+    	margin-top: 0;
+    }
+    .modal-footer-close-btn {
+	    right: 42px;
+	}
+    .modal-footer-link-btn {
+        min-width: 186px;
+        width: 100%;
+    }
+    .modal-footer {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .modal-footer-box .modal-footer.content {
+        border-left-width: 6px;
+        border-right-width: 6px;
+    }
+}
